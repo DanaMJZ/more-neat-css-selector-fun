@@ -11,18 +11,24 @@
 
 
 /* All links default color is gray*/
-
+a {
+   color: gray;
+}
 
 /* All links on hover color red*/
 a:hover {
-   background-color: fuchsia;
+   color: red;
 }
 
 /* All Links visited color black*/
-
+a:visited {
+   color: black;
+}
 
 /* Footer disclaimer text to be .5 em*/
-
+footer p {
+   font-size: 0.5em;
+}
 
 /* Remove bullet points from header navigation links */
 header ul {
@@ -39,13 +45,21 @@ header ul {
 }
 
 /* All Post's Comment Links Show Underline on Hover */
-
+a[href="#comments"]:hover {
+   text-decoration: underline;
+}
 
 /* All Post's Author's Links Bold and Blue, with no Underline */
-
+article h3 a {
+   font-weight: bold;
+   color: blue;
+   text-decoration: none;
+}
 
 /* Article Paragraph Text should have line height of 200% */
-
+article p {
+   line-height: 200%;
+}
 
 /* The First Letter of each Article be 2em */
 section p:first-of-type:first-letter {
@@ -53,10 +67,14 @@ section p:first-of-type:first-letter {
 }
 
 /* The First Image in every Article should have Rounded Corners*/
-
+article img:first-of-type {
+   border-radius: 10px;
+}
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
-
+section:first-of-type {
+   background-color: gold;
+}
 
 /* The 2nd Top Cat Section Should have a Silver/gray Background */
 
