@@ -2,10 +2,18 @@
 
 
 /* Give the header element a background color */
-
+header {
+   background-color: orange;
+}
 
 /* Center everything in the header and footer */
-
+header, footer {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 
 /* All text to Helvetica */
 
